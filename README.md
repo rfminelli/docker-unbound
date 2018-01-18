@@ -1,4 +1,4 @@
-# Network Education CGNAT Logger
+# NextHop Unbound Recursive DNS w/ Docker
 
 [![N|Solid](http://www.nexthop.net.br/static/images/logo.png)](http://www.nexthop.net.br)
 
@@ -10,14 +10,6 @@ A imagem por padrão, binda a porta 53 tcp e udp no host do container.
 Certifique-se que ela está liberada.
 
 ### Criando e inicializando o container:
-
-
-```sh
-$ 
-$ pip install pathlib
-```
-
-Instalando o sistema...
 
 ```sh
 $ docker run -it --name nexthop-unbound -d -p 53:53/udp -p 53:53 nexthopsolutions/docker-unbound
