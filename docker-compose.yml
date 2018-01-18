@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  nexthop-unbound:
+    image: mvance/unbound:latest
+    ports:
+      - "53:53"
+      - "53:53/udp"
+    restart: always
