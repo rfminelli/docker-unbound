@@ -13,7 +13,7 @@ Certifique-se que ela está liberada.
 ### Criando e inicializando o container:
 
 ```sh
-$ docker run -it --name nexthop-unbound -d -p 53:53/udp -p 53:53 nexthopsolutions/docker-unbound
+$ docker run -dit --restart always --name nexthop-unbound -d -p 53:53/udp -p 53:53 nexthopsolutions/docker-unbound
 ```
 
 Para verificar o status:
