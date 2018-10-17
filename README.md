@@ -36,4 +36,10 @@ $ /etc/init.d/unbound restart
 $ exit
 ```
 
+```
+Updates:
+
+17/10/2018 - Atualização de chave ksk.
+```
+
 Dúvidas ou informações: <elizandro@nexthop.net.br>

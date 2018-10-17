@@ -1,8 +1,10 @@
 FROM ubuntu:trusty
+
 MAINTAINER elizandro@nexthop.net.br
 
 
 WORKDIR /etc/unbound/
+
 
 RUN apt-get update && apt-get install -y \
 	dnsutils \
@@ -11,6 +13,7 @@ RUN apt-get update && apt-get install -y \
 	unbound 
 
 ADD assets/unbound.conf /etc/unbound/unbound.conf
+
 RUN rm -fr /etc/unbound/conf.d
 RUN chown -R unbound:unbound /etc/unbound/
 
